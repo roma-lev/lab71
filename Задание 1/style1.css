@@ -4,6 +4,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column; 
+    overflow-x: hidden;
+
 }
 .container-header{
     width: 100%;
@@ -93,7 +95,7 @@
     background-size: cover;
     
     height: 120vh;
-    background: rgb(124, 122, 122);
+    background: rgb(192, 191, 191);
 }
 .block2-container{
     display: flex;
@@ -106,17 +108,15 @@
     left: 0;
     right: 0;
     margin-top: 0vh;
-
     background: linear-gradient(45deg, #161616 10%, #4e4d4d 90%);;
 }
 .footer-container{
-    width: 100%;
+    width: 99.8%;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
     height: 10vh;
-    border: 1px solid black;
     background: url('./img/header-background1.jpg') ;
     display: flex;
     flex-direction: row;
@@ -190,17 +190,6 @@ font-family: 'Montserrat';
 #first-part{
 width: 100%;
 margin-right: 10vh;  
-}
-/*.container-article1{
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid black;
-}*/
-@font-face{
-    font-family: 'Montserrat';
-    src: local('Montserrat Medium'), url('Montserrat Medium') format('truetype');
-    font-weight: 500;
-    font-style: normal;
 }
 .photo-block-label{
     margin-bottom: 5vh;
@@ -331,6 +320,113 @@ margin-right: 10vh;
         font-family: 'Montserrat';
   }
 }
+@media(max-width:2200px){
+    #logo-photo{
+        top: 25%;
+        margin-left: 9vh;
+        width: 20vh;
+        padding: 0px;
+    } 
+    a.nav-a{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 25px;
+        text-decoration: none ;
+        color:#fff;
+        font-size: 50px;
+        transition: color 0.5s linear;
+        font-family: 'Montserrat';
+    }
+    h1.photo-block-label{
+        margin-bottom:0vh;
+        font-size: 65px;
+        margin: 0 auto;
+        position: absolute;
+        margin-top: 3vh;
+        margin-left: 8vh;
+        font-family: 'Montserrat';
+    }
+    .photo-block{
+        display: flex;
+        flex-direction: row;
+        width: 120vh;
+        justify-content: space-around;
+    }
+    .boot-photo{
+        margin-bottom: 5vh;   
+    }
+    img.boot-photo, .central{
+        width: 25vh;
+        height: 25vh;
+        cursor: pointer;
+        transition: width, height 0.5s linear;
+    
+    }
+    img.boot-photo, .left{
+        width: 25vh;
+        height: 25vh;
+        cursor: pointer;
+        transition: width, height 0.5s linear;
+    
+    }
+    img.boot-photo, .right{
+        width: 25vh;
+        height: 25vh;
+        cursor: pointer;
+        transition: width, height 0.5s linear;
+    
+    }
+    .first-sec-pharze-block{
+        display: flex;
+        flex-direction: row;
+        width: 120vh;
+        justify-content: space-around;
+        text-align: center;
+        }  
+}
+@media(max-width:1300px){
+    #logo-photo{
+        top: 25%;
+        left: 5%;
+        width: 15vh;
+        padding: 0px;
+    } 
+    a.nav-a{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 25px;
+        text-decoration: none ;
+        color:#fff;
+        font-size: 30px;
+        transition: color 0.5s linear;
+        font-family: 'Montserrat';
+    }
+    h1.photo-block-label{
+        margin-bottom:0vh;
+        font-size: 45px;
+        margin: 0 auto;
+        position: absolute;
+        margin-top: 13vh;
+        margin-right: 8vh;
+        font-family: 'Montserrat';
+    }
+    .second-section{
+    
+        top: 15vh;
+        width: 100%;
+        height: 45vh;
+        background: url('./img/phon-style3.jpg') no-repeat center;
+        margin: 0 auto;
+        background-size: cover;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 @media(max-width:1000px){
     .nav{
         text-transform: uppercase;
@@ -375,21 +471,45 @@ margin-right: 10vh;
         margin: 0 25px;
         text-decoration: none ;
         color:#fff;
-        font-size: 20px;
+        font-size: 25px;
         transition: color 0.5s linear;
         font-family: 'Montserrat';
     }
     #logo-photo{
         top: 25%;
-        left: 5%;
+        margin-left: 2vh;
         width: 80%;
         z-index: 1001;
         padding: 0px;
     } 
 }
-@media(max-width:600px){
+@media(max-width:700px){
     .nav{
         font-size: 5px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 35vh;
+        margin-left: 13vh;
+        margin-top: 0;
+        top: 5%;
+        right: 0;
+        left: 0;
+    }
+    a.nav-a{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px;
+        text-decoration: none ;
+        color:#fff;
+        font-size: 20px;
+        transition: color 0.5s linear;
+        font-family: 'Montserrat';
+    }
+}
+@media(max-width:600px){
+    .nav{
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -397,7 +517,6 @@ margin-right: 10vh;
         width: 80%;
         margin-left: 22%;
         margin-top: 0;
-        top: 5%;
         right: 0;
         left: 0;
     }
@@ -410,18 +529,28 @@ margin-right: 10vh;
         font-size: 15px;
         transition: color 0.5s linear;
         font-family: 'Montserrat';
+        margin-top: 1vh;
     }
     #logo-photo{
-        top: 25%;
-        left: 5%;
-        width: 80%;
-        z-index: 1001;
+        width: 10vh;
         padding: 0px;
     } 
+    .first-section{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        background: url('./img/header-background1.jpg');
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
 }
 @media(max-width: 500px){
     .first-section{
         display: flex;
+        flex-direction: column;
         align-items: center;
         width: 100%;
         height: 15vh;
@@ -435,30 +564,30 @@ margin-right: 10vh;
         text-transform: uppercase;
         display: flex;
         align-items: center;
-        justify-content:center;
-        width: 50vh;
+        width: 20vh;
         top: 6vh;
-        left: 4vh !important;
+        margin-right: 8vh;
+        left: 0vh !important;
     }
     a.nav-a{
         display: inline-block;
         vertical-align: top;
-        margin: 0 5px !important;
+        margin: 0 10px !important;
         text-decoration: none ;
         color:#fff;
-        font-size: 15px !important;
+        font-size: 18px !important;
         transition: color 0.5s linear;
         font-family: 'Montserrat';
     }
     img#logo-photo{
-        top: 2vh;
-        width: 15vh;
-        z-index: 1001;
+        margin-top: 2vh;
+        width: 8vh;
     } 
 } 
 @media(max-width: 400px){
     .first-section{
         display: flex;
+        flex-direction: column;
         align-items: center;
         width: 100%;
         height: 12vh;
@@ -473,9 +602,8 @@ margin-right: 10vh;
         display: flex;
         align-items: center;
         justify-content:center;
-        width: 35vh;
-        top: 5vh;
-        left: 4vh !important;
+        width: 15vh;
+        right: 7vh !important;
     }
     a.nav-a{
         display: inline-block;
@@ -483,22 +611,30 @@ margin-right: 10vh;
         margin: 0 5px !important;
         text-decoration: none ;
         color:#fff;
-        font-size: 10px !important;
+        font-size: 15px !important;
         transition: color 0.5s linear;
         font-family: 'Montserrat';
     }
     img#logo-photo{
-        top: 2vh;
-        width: 15vh;
-        z-index: 1001;
+        margin-left: 3vh;
+        width: 8vh;
     } 
 }
+@media(max-width: 300px){
+    img#logo-photo{
+        top: 2vh;
+        width: 10vh;
+        z-index: 1001;
+        margin-left: 2vh;
+    } 
+}
+
 @media(max-width: 900px){
     .second-section{
     
         top: 15vh;
         width: 100%;
-        height: 150vh;
+        height: 110vh;
         background: url('./img/phon-style3.jpg') no-repeat center;
         margin: 0 auto;
         background-size: cover;
@@ -553,16 +689,29 @@ margin-right: 10vh;
     
     }
 }
+@media(max-width: 1300px){
+    .block-line{
+        margin-top: 5vh;
+        height: 20vh;
+    }
+    span.motto{
+        margin-top: 0;
+        font-family: 'Montserrat';
+        font-size: 65px;
+        margin-left: 0vh;
+        }
+    
+}
 @media(max-width: 900px){
     .block-line{
-        margin-top: 155vh;
+        margin-top: 115vh;
         height: 20vh;
     }
     
 }
 @media(max-width: 600px){
     .block-line{
-        margin-top: 155vh;
+        margin-top: 115vh;
         height: 20vh;
     }
     span.motto{
@@ -575,7 +724,7 @@ margin-right: 10vh;
 @media(max-width: 400px){
     .block-line{
     height: 20vh;
-    margin-top: 115vh;
+    margin-top: 110vh;
 
     }
     span.motto{
@@ -585,7 +734,18 @@ margin-right: 10vh;
     margin-left: 0vh;
     }
 }
-
+@media(max-width: 1300px){
+    .third-section{
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        z-index: 998;
+        background-size: cover;
+        height: 95vh;
+        margin-top:0vh;
+        background: rgb(192, 191, 191);
+    }
 @media(max-width: 1000px){
     .third-section{
         width: 100%;
@@ -594,9 +754,9 @@ margin-right: 10vh;
         right: 0;
         z-index: 998;
         background-size: cover;
-        height: 90vh;
+        height: 70vh;
         margin-top:0vh;
-        background: rgb(124, 122, 122);
+        background: rgb(192, 191, 191);
     }
     h1.first-phraze{
         text-align: left;
@@ -619,11 +779,9 @@ margin-right: 10vh;
         margin: 0 auto;
         left: 0;
         right: 0;
-        z-index: 998;
         background-size: cover;
         height: 80vh;
-        margin-top:0vh;
-        background: rgb(124, 122, 122);
+        background: rgb(192, 191, 191);
     } 
     h1.first-phraze{
         text-align: left;
@@ -685,9 +843,9 @@ margin-right: 10vh;
         right: 0;
         z-index: 998;
         background-size: cover;
-        height: 80vh;
+        height: 60vh;
         margin-top:0vh;
-        background: rgb(124, 122, 122);
+        background: rgb(192, 191, 191);
     } 
     h1.first-phraze{
         text-align: left;
@@ -704,8 +862,8 @@ margin-right: 10vh;
         font-size: 15px;
     }
     img.block2{
-        width: 30vh;
-        height: 30vh;
+        width: 20vh;
+        height: 20vh;
         margin-left: 5vh;
     }
     .pic1{
@@ -742,19 +900,34 @@ margin-right: 10vh;
     }
 }
 @media(max-width: 500px){
+    .third-section{
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        z-index: 998;
+        background-size: cover;
+        height: 50vh;
+        background: rgb(192, 191, 191);
+    } 
     h1.first-phraze{
         text-align: center;
         
         font-family: 'Montserrat';
-        font-size: 10px;
-        margin-top: 7vh;
+        font-size: 12px;
+        margin-top: 3vh;
     }
     h1.second-phraze{
         
         text-align: center;
         font-family: 'Montserrat';
         margin-top: 7vh;
-        font-size: 10px;
+        font-size: 12px;
+    }
+    img.block2{
+        width: 15vh;
+        height: 15vh;
+        margin-left: 3vh;
     }
 }
 @media(max-width: 400px){
@@ -765,8 +938,8 @@ margin-right: 10vh;
         right: 0;
         z-index: 998;
         background-size: cover;
-        height: 85vh;
-        background: rgb(124, 122, 122);
+        height: 60vh;
+        background: rgb(192, 191, 191);
     } 
     h1.first-phraze{
         text-align: center;
@@ -774,6 +947,8 @@ margin-right: 10vh;
         font-family: 'Montserrat';
         font-size: 10px;
         margin-top: -7vh;
+        width: 20vh;
+
     }
     h1.second-phraze{
         
@@ -781,11 +956,12 @@ margin-right: 10vh;
         font-family: 'Montserrat';
         margin-top: 0;
         font-size: 10px;
+        width: 20vh;
     }
     img.block2{
-        width: 20vh;
-        height: 20vh;
-        margin-left: 5vh;
+        width: 15vh;
+        height: 15vh;
+        margin-left: 0vh;
     }
     .pic1{
         margin-top: 3vh;
@@ -818,15 +994,27 @@ margin-right: 10vh;
         align-items: center;
     
     }
-}   
+} 
+@media(max-width: 300px){
+    .third-section{
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        z-index: 998;
+        background-size: cover;
+        height: 95vh;
+        background: rgb(192, 191, 191);
+    }
+}  
 
 @media(max-width: 1300px){
     .novinki{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
-        margin-right: 10%;
+       
     }
     .photo-block-label{
         margin-bottom:5vh;
@@ -838,31 +1026,31 @@ margin-right: 10vh;
         font-family: 'Montserrat';  
     }
     .photo-block{
-        width: 150vh;
         display: flex;
         flex-direction: row;
+        width: 100vh;
         justify-content: space-around;
     }
     .boot-photo{
         margin-bottom: 5vh;   
     }
     img.boot-photo, .central{
-        width: 25vh;
-        height: 25vh;
+        width: 20vh;
+        height: 20vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .left{
-        width: 25vh;
-        height: 25vh;
+        width: 20vh;
+        height: 20vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .right{
-        width: 25vh;
-        height: 25vh;
+        width: 20vh;
+        height: 20vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
@@ -870,19 +1058,19 @@ margin-right: 10vh;
     .first-sec-pharze-block{
         display: flex;
         flex-direction: row;
-        width: 150vh;
+        width: 100vh;
         justify-content: space-around;
         text-align: center;
         }
 }
 
 @media(max-width: 900px){
-    .photo-block-label{
+    h1.photo-block-label{
         margin-bottom:5vh;
-        font-size: 30px;
+        font-size: 35px;
         margin: 0 auto;
         position: absolute;
-        top: 3%;
+        margin-top: 0vh;
         left: 25%;
         font-family: 'Montserrat';  
     }
@@ -891,7 +1079,7 @@ margin-right: 10vh;
         flex-direction: column;
         width: 40vh;
         height: 100vh;
-        margin-left: 25%;
+        margin-left: 2vh;
         display: flex;
         justify-content: space-around;
     }
@@ -899,22 +1087,22 @@ margin-right: 10vh;
         margin-bottom: 5vh;   
     }
     img.boot-photo, .central{
-        width: 30vh;
-        height: 30vh;
+        width: 20vh;
+        height: 20vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .left{
-        width: 30vh;
-        height: 30vh;
+        width: 20vh;
+        height: 20vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .right{
-        width: 30vh;
-        height: 30vh;
+        width:20vh;
+        height: 20vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
@@ -928,7 +1116,66 @@ margin-right: 10vh;
         }
         .novinki{
             display: flex;
-            flex-direction: row;  
+            flex-direction: row; 
+            width: 60vh;
+        }  
+}
+
+
+@media(max-width: 700px){
+    .photo-block-label{
+        margin-bottom:5vh;
+        font-size: 30px;
+        margin: 0 auto;
+        position: absolute;
+        
+        font-family: 'Montserrat';  
+    }
+    .photo-block{
+        margin-top: 10vh;
+        flex-direction: column;
+        width: 30vh;
+        height: 100vh;
+        margin-left: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .boot-photo{
+        margin-bottom: 5vh;   
+    }
+    img.boot-photo, .central{
+        width: 15vh;
+        height: 15vh;
+        cursor: pointer;
+        transition: width, height 0.5s linear;
+    
+    }
+    img.boot-photo, .left{
+        width: 15vh;
+        height:15vh;
+        cursor: pointer;
+        transition: width, height 0.5s linear;
+    
+    }
+    img.boot-photo, .right{
+        width: 15vh;
+        height: 15vh;
+        cursor: pointer;
+        transition: width, height 0.5s linear;
+    
+    }
+    .first-sec-pharze-block{
+        display: flex;
+        flex-direction: column;
+        width: 60vh;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 2vh;
+        }
+        .novinki{
+            display: flex;
+            flex-direction: row;
+            width: 60vh;  
         }  
 }
 @media(max-width: 600px){
@@ -954,22 +1201,22 @@ margin-right: 10vh;
         margin-bottom: 5vh;   
     }
     img.boot-photo, .central{
-        width: 25vh;
-        height: 25vh;
+        width: 15vh;
+        height: 15vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .left{
-        width: 25vh;
-        height:25vh;
+        width: 15vh;
+        height:15vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .right{
-        width: 25vh;
-        height: 25vh;
+        width: 15vh;
+        height: 15vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
@@ -983,7 +1230,8 @@ margin-right: 10vh;
         }
         .novinki{
             display: flex;
-            flex-direction: row;  
+            flex-direction: row;
+            width: 50vh;  
         }  
 }
 @media(max-width: 500px){
@@ -1001,7 +1249,7 @@ margin-right: 10vh;
         flex-direction: column;
         width: 35vh;
         height: 100vh;
-        margin-left: 20%;
+        margin-left: 4vh;
         display: flex;
         justify-content: space-around;
     }
@@ -1009,22 +1257,22 @@ margin-right: 10vh;
         margin-bottom: 5vh;   
     }
     img.boot-photo, .central{
-        width: 25vh;
-        height: 25vh;
+        width: 15vh;
+        height: 15vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .left{
-        width: 25vh;
-        height:25vh;
+        width: 15vh;
+        height:15vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .right{
-        width: 25vh;
-        height: 25vh;
+        width: 15vh;
+        height: 15vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
@@ -1038,7 +1286,8 @@ margin-right: 10vh;
         }
         .novinki{
             display: flex;
-            flex-direction: row;  
+            flex-direction: row;
+            width: 40vh;  
  
         } 
         .price{
@@ -1054,16 +1303,15 @@ margin-right: 10vh;
         .novinki{
             display: flex;
             flex-direction: row;
-            width: 90%;
+            width: 28vh;
             margin-right: 10%;
         }
     h1.photo-block-label{
         text-align: center;
-        margin-bottom:5vh;
-        font-size: 15px;
+        margin-bottom:6vh;
+        font-size: 25px;
         margin: 0 auto;
         position: absolute;
-        top: 7%;
         font-family: 'Montserrat';  
         margin-right: 5vh;
     }
@@ -1073,7 +1321,7 @@ margin-right: 10vh;
         flex-direction: column;
         width: 25vh;
         height: 100vh;
-        margin-left: 8vh;
+        margin-left: 2vh;
         display: flex;
         justify-content: space-around;
     }
@@ -1081,22 +1329,22 @@ margin-right: 10vh;
         margin-bottom: 5vh;   
     }
     img.boot-photo, .central{
-        width: 17vh;
-        height: 17vh;
+        width: 10vh;
+        height: 10vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .left{
-        width: 17vh;
-        height: 17vh;
+        width: 10vh;
+        height: 10vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
     }
     img.boot-photo, .right{
-        width: 17vh;
-        height: 17vh;
+        width: 10vh;
+        height: 10vh;
         cursor: pointer;
         transition: width, height 0.5s linear;
     
@@ -1146,5 +1394,5 @@ margin-right: 10vh;
     font-family: 'Montserrat';
     font-size: 20px;
 }
-}
+}}
 
